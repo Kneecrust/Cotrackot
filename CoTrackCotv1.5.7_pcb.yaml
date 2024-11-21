@@ -1,0 +1,307 @@
+points:
+    zones:
+        center:
+          anchor:
+            shift: [112.5,-25]
+            rotate: 45
+          rows:
+            home.row_net: P5
+            bottom.row_net: P2
+          columns:
+            left:
+              rows:
+                bottom:
+                home:
+            right:
+              rows:
+                bottom:
+                home: 
+        main:
+            mirror:
+              distance: 225
+            rotate: -15
+            rows:
+                bottom.row_net: P2
+                home.row_net: P0
+                top.row_net: P1
+            columns:
+                pinky:
+                    key:
+                        col_net: P7
+                        stagger: 
+                        spread: U
+                    rows:
+                        bottom:
+                        home:
+                        top:
+                ring:
+                    key:
+                        col_net: P6
+                        spread: U
+                        stagger: 7
+                    rows:
+                        bottom:
+                        home:
+                        top:
+                middle:
+                    key:
+                        col_net: P5
+                        spread: U
+                        stagger: 5
+                    rows:
+                        bottom:
+                        home:
+                        top:
+                index:
+                    key:
+                        col_net: P4
+                        spread: U
+                        stagger: -2
+                    rows:
+                        bottom:
+                        home:
+                        top:
+                inner:
+                    key:
+                        col_net: P3
+                        spread: U
+                    rows:
+                        bottom:
+                        home:
+                        top:
+        thumb:
+            mirror:
+              distance: 225
+            anchor:
+                ref: main_middle_bottom
+                shift: [1U-3, -1.35cy]
+            rows.home.row_net: P8
+            columns:
+                inner.key:
+                    col_net: P5
+                    rotate: 15
+                    shift: [0.04cx, -0.05cy]
+                home.key:
+                    col_net: P4
+                    spread: cx+4
+                    stagger: 1.8
+                outer.key:
+                    col_net: P3
+                    spread: cx+3.7
+                    rotate: -15
+                    stagger: -2
+                    shift: [-0.02cx, -0.05cy]
+outlines:
+    _board_outline:
+        -   what: polygon
+            fillet: 4
+            points:
+                -   ref: mirror_thumb_outer_home
+                    shift: [-0.4cx, -0.65cy]
+                -   ref: mirror_thumb_outer_home
+                    shift: [.6cx, -0.65cy]
+
+                -   ref: thumb_outer_home
+                    shift: [0.6cx, -0.65cy]
+
+                -   ref: thumb_home_home
+                    shift: [0.4cx, -0.65cy]
+                -   ref: thumb_home_home
+                    shift: [-0.4cx, -0.65cy]
+
+                -   ref: thumb_inner_home
+                    shift: [0.4cx, -0.65cy]
+                -   ref: thumb_inner_home
+                    shift: [-0.65cx, -0.65cy]
+
+                -   ref: main_middle_bottom
+                    shift: [0.25cx, -1.35cy]
+                #-   ref: main_middle_bottom
+                #    shift: [-0.35cx, -0.65cy]
+
+                #-   ref: main_ring_bottom
+                #    shift: [0.55cx, -0.65cy]
+                #-   ref: main_ring_bottom
+                #    shift: [-0.3cx, -0.65cy]
+
+                #-   ref: main_pinky_bottom
+                #    shift: [0.55cx, -0.65cy]
+                #-   ref: main_pinky_bottom
+                #    shift: [-0.3cx, -0.65cy]
+
+                #-   ref: main_outer_pinky_bottom
+                #    shift: [0.6cx, -0.65cy]
+                #-   ref: main_outer_pinky_bottom
+                #    shift: [0.6cx, -0.65cy]
+                #-   ref: main_outer_pinky_bottom
+                #    shift: [-0.65cx, -0.65cy]
+
+                #-   ref: main_outer_pinky_top
+                #    shift: [-0.65cx, 0.65cy]
+                #-   ref: main_outer_pinky_top
+                #    shift: [0.4cx, 0.65cy]
+
+                -   ref: main_pinky_top
+                    shift: [-0.65cx, -2.9cy]
+                -   ref: main_pinky_top
+                    shift: [-0.65cx, 0.7cy]
+
+                #-   ref: main_pinky_top
+                #    shift: [0.4cx, 0.65cy]
+
+                #-   ref: main_ring_top
+                #    shift: [-0.5cx, 0.65cy]
+                #-   ref: main_ring_top
+                #    shift: [0.4cx, 0.65cy]
+
+                #-   ref: main_middle_top
+                #    shift: [-0.4cx, 0.65cy]
+                #-   ref: main_middle_top
+                #    shift: [0.4cx, 0.65cy]
+
+                #-   ref: main_index_top
+                #    shift: [-0.4cx, 0.65cy]
+                #-   ref: main_index_top
+                #    shift: [0.5cx, 0.65cy]
+
+                #-   ref: mirror_main_index_top
+                #    shift: [0.5cx, 0.65cy]
+                #-   ref: mirror_main_index_top
+                #    shift: [-0.4cx, 0.65cy]
+
+                #-   ref: mirror_main_middle_top
+                #    shift: [0.4cx, 0.65cy]
+                #-   ref: mirror_main_middle_top
+                #    shift: [-0.4cx, 0.65cy]
+
+                #-   ref: mirror_main_ring_top
+                #    shift: [0.4cx, 0.65cy]
+                #-   ref: mirror_main_ring_top
+                #    shift: [-0.5cx, 0.65cy]
+
+                #-   ref: mirror_main_pinky_top
+                #    shift: [0.4cx, 0.65cy]
+
+                -   ref: mirror_main_pinky_top
+                    shift: [-0.65cx, 0.7cy]
+                -   ref: mirror_main_pinky_top
+                    shift: [-.65cx, -2.9cy]
+                
+                #-   ref: mirror_main_outer_pinky_top
+                #    shift: [0.4cx, 0.65cy]
+                #-   ref: mirror_main_outer_pinky_top
+                #    shift: [-0.65cx, 0.65cy]
+
+                #-   ref: mirror_main_outer_pinky_bottom
+                #    shift: [-0.65cx, -0.65cy]
+                #-  ref: mirror_main_outer_pinky_bottom
+                #    shift: [0.6cx, -0.65cy]
+                #-   ref: mirror_main_outer_pinky_bottom
+                #    shift: [0.6cx, -0.65cy]
+
+                #-   ref: mirror_main_pinky_bottom
+                #    shift: [-0.3cx, -0.65cy]
+                #-   ref: mirror_main_pinky_bottom
+                #    shift: [0.55cx, -0.65cy]
+
+                #-   ref: mirror_main_ring_bottom
+                #    shift: [-0.3cx, -0.65cy]
+                #-   ref: mirror_main_ring_bottom
+                #    shift: [0.55cx, -0.65cy]
+
+                #-   ref: mirror_main_middle_bottom
+                #    shift: [-0.35cx, -0.65cy]
+                -   ref: mirror_main_middle_bottom
+                    shift: [0.25cx, -1.35cy]
+
+                -   ref: mirror_thumb_inner_home
+                    shift: [-0.65cx, -0.65cy]
+                -   ref: mirror_thumb_inner_home
+                    shift: [0.4cx, -0.65cy]
+
+                -   ref: mirror_thumb_home_home
+                    shift: [-0.4cx, -0.65cy]
+                -   ref: mirror_thumb_home_home
+                    shift: [0.4cx, -0.65cy]
+    _keycap_outlines:
+        -   what: rectangle
+            fillet: 2
+            where: true
+            size: [1cx, 1cy] # Choc keycaps are 17.5 x 16.5
+    _switchplate_outlines:
+        -   what: rectangle
+            where: true
+            size: [13.9,13.9]
+            expand: 1
+    _switchcenters:
+         -  what: circle
+            where: true
+            radius: 0.0001
+    preview:
+        -   what: outline
+            name: _board_outline
+            operation: stack
+        #-   what: outline
+        #    name: _keycap_outlines
+        #    operation: stack
+        -   what: outline
+            name: _switchplate_outlines
+            operation: stack
+        -   what: outline
+            name: _switchcenters
+            operation: stack
+cases.cotrackcot:
+    -   what: outline
+        name: _board_outline
+        extrude: 3
+        operation: subtract
+    -   what: outline
+        name: _keycap_outlines
+        extrude: 6
+        operation: add
+pcbs.cotrackcot:
+    outlines:
+        edgecuts:
+            outline: _board_outline
+            layer: Edge.Cuts
+        #switchplate:
+        #    outline: _switchplate_outlines
+        #    layer: Edge.Cuts
+        #switchcenters:
+        #    outline: _switchcenters
+        #    layer: Edge.Cuts
+    footprints:
+        choc_hotswap:
+            what: choc
+            where: true
+            params:
+                keycaps: false
+                reverse: false
+                hotswap: true
+                from: '{{column_net}}'
+                to: '{{colrow}}'
+        diode:
+            what: diode
+            where: true
+            params:
+                from: '{{colrow}}'
+                to: '{{row_net}}'
+            adjust:
+                shift: [0, -5]
+        promicro:
+            what: promicro
+            params:
+                orientation: "down"
+            where:
+                ref: main_inner_top
+                shift: [0,0]
+                rotate: 0
+        reset:
+            what: button
+            params:
+                from: GND
+                to: RST
+            where:
+                ref: main_inner_top
+                shift: [15, -15]
+                rotate: -90
