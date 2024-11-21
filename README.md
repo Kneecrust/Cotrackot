@@ -9,3 +9,8 @@ Some details:
 4. Pins exposed for Trackpoint: VCC, GND, CLK (P0), DATA (P1), RST (P9).
 5. Custom 3DP LDSA keycaps adjusted for MX spacing.
 6. Custom 3DP Trackpoint extension pin optimized for FDM printing.
+
+______
+Important note on Ergogen yaml:
+GPIO are not correctly assigned. 😅
+I dealt with that in Kicad directly rather than doing that in Ergogen.
